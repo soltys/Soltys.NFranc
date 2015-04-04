@@ -7,8 +7,8 @@
     <ProjectGuid>{0A7DF957-9811-46E1-8E82-2F1401797354}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NFranc.Tests</RootNamespace>
-    <AssemblyName>NFranc.Tests</AssemblyName>
+    <RootNamespace>Soltys.NFranc.Tests</RootNamespace>
+    <AssemblyName>Soltys.NFranc.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NFrancTests.cs" />
     <Compile Include="NGramTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

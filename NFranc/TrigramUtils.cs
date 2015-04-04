@@ -37,8 +37,19 @@ namespace NFranc
         public static Dictionary<string, int> GetCleanTrigramsAsDictionary(string value)
         {
             var trigrams = GetCleanTrigrams(value).ToList();
-            var dict =  trigrams.ToDictionary(keySelector => keySelector,
-                valueSelector => trigrams.Count(t => t == valueSelector));
+
+            var dict =  new Dictionary<string, int>();
+            foreach (var trigram in trigrams)
+            {
+                if (!dict.ContainsKey(trigram))
+                {
+                    dict.Add(trigram, 1);
+                }
+                else
+                {
+                    dict[trigram]++;
+                }
+            }
 
             return dict;
         }
